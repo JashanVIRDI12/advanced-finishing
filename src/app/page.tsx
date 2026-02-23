@@ -27,15 +27,28 @@ export default function HomePage() {
             {/* Left Column - Content & Form */}
             <div className="z-10 mt-8">
               <p className="text-sm font-bold text-gray-900 tracking-wider uppercase mb-6">
-                FAMILY OWNED BUSINESS IN CANADA SINCE 2010
+                Family-owned in Canada since 2010
               </p>
-              <h1 className="text-5xl lg:text-6xl font-extrabold text-secondary leading-[1.05] tracking-tight mb-10">
-                FACADE RENOVATION AND INTERIOR / EXTERIOR INSULATION
+              <h1 className="text-5xl lg:text-6xl font-extrabold text-secondary leading-[1.05] tracking-tight mb-6">
+                Facade renovation and high-performance exterior insulation
               </h1>
+
+              <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-xl">
+                Improve comfort, reduce energy loss, and refresh your home’s exterior. Get an on-site evaluation and a clear, detailed quote from our team.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Button asChild className="bg-primary hover:bg-primary/90 text-white rounded-none px-8 h-12 text-sm uppercase tracking-wider font-semibold">
+                  <Link href="/contact">Get a free quote</Link>
+                </Button>
+                <Button asChild variant="outline" className="rounded-none border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-8 h-12 text-sm uppercase tracking-wider font-semibold">
+                  <Link href="/products">Explore solutions</Link>
+                </Button>
+              </div>
 
               <div className="bg-white">
                 <p className="text-gray-600 mb-6 font-medium">
-                  Request a quote. Measurements will be taken on-site by our teams.
+                  Prefer to leave your details here? We’ll contact you to schedule an on-site visit.
                 </p>
                 <form className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -63,7 +76,7 @@ export default function HomePage() {
 
                   <div className="pt-4">
                     <Button type="submit" className="bg-primary hover:bg-primary/90 text-white rounded-none px-8 h-12 text-sm uppercase tracking-wider font-semibold w-auto">
-                      Send <ArrowRight className="ml-2 h-4 w-4 -rotate-45" />
+                      Send request <ArrowRight className="ml-2 h-4 w-4 -rotate-45" />
                     </Button>
                   </div>
                 </form>
@@ -101,10 +114,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <h2 className="text-3xl lg:text-4xl font-extrabold text-secondary leading-tight uppercase">
-              THE EAdvanced Finishing IN FACADE RENOVATION AND EXTERIOR THERMAL INSULATION IN CANADA
+              Advanced Finishing for facade renovation and exterior thermal insulation in Canada
             </h2>
             <div className="text-gray-600 text-lg leading-relaxed border-l-4 border-primary pl-6">
-              Our teams intervene across Canada for renovation and exterior thermal insulation. Advanced Finishing brings all the know-how and quality of a family business since 2010. We guarantee a perfect result and long-term energy savings.
+              Our teams work across Canada on facade renovation and exterior insulation. Since 2010, we’ve focused on durable workmanship, clean finishes, and measurable energy performance—so you can feel the difference season after season.
             </div>
           </div>
         </div>
@@ -113,6 +126,14 @@ export default function HomePage() {
       {/* Services Section */}
       <section className="py-20 bg-sky-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-secondary mb-4 uppercase">
+              What we do
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Two core services, one goal: a better-looking exterior and a more efficient home.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="group">
               <h3 className="text-2xl font-extrabold text-secondary mb-4 uppercase flex items-center gap-4">
@@ -123,7 +144,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-black/10 mix-blend-multiply"></div>
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Give your exterior walls a new lease on life with our custom facade renovation solutions. Deep cleaning and tailored treatments to protect your home durably.
+                Restore and protect your exterior with a renovation plan tailored to your surface and exposure. Clean lines, lasting protection, and a finish that elevates curb appeal.
               </p>
               <Button variant="link" className="text-primary hover:text-primary/80 font-bold uppercase p-0 h-auto" asChild>
                 <Link href="/products">
@@ -141,7 +162,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-black/10 mix-blend-multiply"></div>
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Insulate your home from the outside to achieve up to 30% energy savings while enhancing your property value without losing living space.
+                Improve comfort and reduce heat loss without sacrificing interior space. Exterior insulation can help stabilize temperatures and modernize the look of your home.
               </p>
               <Button variant="link" className="text-primary hover:text-primary/80 font-bold uppercase p-0 h-auto" asChild>
                 <Link href="/products">
@@ -158,10 +179,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-extrabold text-secondary mb-4 uppercase">
-              Our Solutions
+              Featured solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover our high-performance reflective insulation products
+              Explore high-performance materials and accessories selected for reliable results.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -184,10 +205,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-extrabold text-secondary mb-4 uppercase">
-              Customer Reviews
+              Homeowners trust our work
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              They trusted us with their insulation projects
+              A few words from customers who chose us for renovation and insulation.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -203,10 +224,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Latest from Our Blog
+              Insights & guides
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Expert insights, installation tips, and energy-saving advice
+              Practical tips, material comparisons, and advice for improving energy performance.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
