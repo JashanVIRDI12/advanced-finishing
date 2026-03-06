@@ -102,14 +102,14 @@ export default function HomePage() {
       {/* Featured Products */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-gray-200 pb-6">
-            <div>
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 border-b border-gray-200 pb-6 text-center md:text-left">
+            <div className="flex flex-col items-center md:items-start">
               <span className="text-primary font-bold tracking-widest text-xs uppercase block mb-3">Our Collection</span>
               <h2 className="text-4xl md:text-5xl font-extrabold text-secondary tracking-tight">
                 Featured Solutions
               </h2>
             </div>
-            <Link href="/products" className="group mt-6 md:mt-0 flex items-center text-sm font-bold uppercase tracking-widest text-secondary hover:text-primary transition-colors">
+            <Link href="/products" className="group mt-6 md:mt-0 flex items-center justify-center md:justify-start text-sm font-bold uppercase tracking-widest text-secondary hover:text-primary transition-colors">
               Explore All <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -139,8 +139,8 @@ export default function HomePage() {
             <p className="text-gray-300 text-lg leading-relaxed mb-10 border-l border-primary/50 pl-6">
               At Quince Canada, we are dedicated to research, development, and the production of advanced engineered reflective insulation. Our high-performance Low-Emissivity solutions are the cornerstone of super-efficient architecture, delivering unparalleled sustainability.
             </p>
-            <div>
-              <Button asChild size="lg" variant="outline" className="border-gray-600 text-gray-200 hover:bg-white hover:text-secondary rounded-none px-10 h-14 text-sm uppercase tracking-widest font-bold transition-all">
+            <div className="flex justify-center md:justify-start">
+              <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-black border border-white rounded-none px-10 h-14 text-sm uppercase tracking-widest font-bold transition-all shadow-lg">
                 <Link href="/about">Discover Our Story</Link>
               </Button>
             </div>

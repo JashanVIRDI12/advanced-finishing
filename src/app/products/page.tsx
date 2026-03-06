@@ -38,7 +38,7 @@ export default function ProductsPage() {
 
       <div className="bg-background min-h-screen py-24" id="product-grid">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-gray-200 pb-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 border-b border-gray-200 pb-6">
             <div>
               <h2 className="text-3xl font-extrabold text-secondary tracking-tight mb-2">Our Product Lines</h2>
               <p className="text-gray-500">Discover {products.length} engineered solutions for thermal control.</p>

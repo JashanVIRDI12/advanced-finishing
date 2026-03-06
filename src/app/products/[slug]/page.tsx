@@ -250,7 +250,7 @@ export default function ProductPage({ params }: ProductPageProps) {
       {/* Related Products */}
       <section className="py-24 bg-gray-50 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-end mb-12 border-b border-gray-200 pb-4">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 border-b border-gray-200 pb-4 gap-4 sm:gap-0">
             <div>
               <h2 className="text-3xl font-extrabold text-secondary tracking-tight mb-2">Related Products</h2>
               <p className="text-gray-500">Explore alternative solutions in this category.</p>
