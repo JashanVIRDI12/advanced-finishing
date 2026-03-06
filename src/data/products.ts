@@ -8,9 +8,7 @@ export const products: Product[] = [
     description: 'Premium multi-layer reflective insulation system designed for maximum thermal performance in residential and commercial applications.',
     shortDescription: 'Advanced reflective insulation with 99% radiant barrier efficiency.',
     images: [
-      '/images/products/reflective-shield-elite-1.jpg',
-      '/images/products/reflective-shield-elite-2.jpg',
-      '/images/products/reflective-shield-elite-3.jpg'
+      '/images/twosidewrap.png'
     ],
     features: [
       '99% radiant barrier efficiency',
@@ -74,8 +72,7 @@ export const products: Product[] = [
     description: 'Professional-grade bubble insulation ideal for metal buildings, warehouses, and agricultural structures.',
     shortDescription: 'Heavy-duty bubble insulation for commercial and agricultural applications.',
     images: [
-      '/images/products/thermal-guard-pro-1.jpg',
-      '/images/products/thermal-guard-pro-2.jpg'
+      '/images/bubblewrap.png'
     ],
     features: [
       'Double bubble construction',
@@ -135,7 +132,7 @@ export const products: Product[] = [
     description: 'Affordable single-sided reflective insulation for budget-conscious projects without compromising quality.',
     shortDescription: 'Budget-friendly reflective insulation with reliable performance.',
     images: [
-      '/images/products/eco-shield-basics-1.jpg'
+      '/images/onesidewrap.png'
     ],
     features: [
       'Single-sided foil',

@@ -82,10 +82,10 @@ export default function ContactPage() {
   };
 
   const contactInfo = [
-    { icon: <Phone className="h-5 w-5" />, label: 'Phone', value: '1-800-Advanced Finishing-ON', sub: 'Mon–Fri, 8am–6pm EST' },
-    { icon: <Mail className="h-5 w-5" />, label: 'Email', value: 'contact@advancedfinishing.ca', sub: 'We reply within 24 hours' },
-    { icon: <MapPin className="h-5 w-5" />, label: 'Headquarters', value: '123 Maple Street, Toronto ON M5V 2T6', sub: 'National distribution network' },
-    { icon: <Clock className="h-5 w-5" />, label: 'Business Hours', value: 'Mon–Fri: 8am–6pm EST', sub: 'Sat: 9am–2pm EST' },
+    { icon: <Phone className="h-5 w-5" />, label: 'Phone', value: '(289) 206-5308', sub: 'Available from 8:00 AM to 5:00 PM' },
+    { icon: <Mail className="h-5 w-5" />, label: 'Email', value: 'info@quincecanada.com', sub: 'We reply within 24 hours' },
+    { icon: <MapPin className="h-5 w-5" />, label: 'Headquarters', value: '12545 Coleraine Dr #9, Caledon, ON L7E 3B', sub: 'National distribution network' },
+    { icon: <Clock className="h-5 w-5" />, label: 'Business Hours', value: '8:00 AM – 5:00 PM', sub: 'Available from 8:00 AM to 5:00 PM' },
   ];
 
   return (
@@ -144,7 +144,7 @@ export default function ContactPage() {
                     <p className="text-gray-600 mb-8 text-lg leading-relaxed">
                       Thank you for reaching out. One of our insulation experts will contact you within 24 hours.
                     </p>
-                    <Button 
+                    <Button
                       className="bg-secondary hover:bg-secondary/90 text-white rounded-none px-8 h-12 uppercase tracking-wider font-semibold"
                       onClick={() => { setSubmitted(false); setFormData({ firstName: '', lastName: '', email: '', phone: '', subject: '', projectType: '', message: '', honeypot: '' }); }}
                     >
@@ -269,9 +269,9 @@ export default function ContactPage() {
                         <p className="text-xs text-gray-400 mt-2 text-right">{formData.message.length} / 20 MIN CHARACTERS</p>
                       </div>
 
-                      <Button 
-                        type="submit" 
-                        className="w-full bg-primary hover:bg-primary/90 text-white rounded-none h-14 text-lg font-bold uppercase tracking-widest transition-all duration-300" 
+                      <Button
+                        type="submit"
+                        className="w-full bg-primary hover:bg-primary/90 text-white rounded-none h-14 text-lg font-bold uppercase tracking-widest transition-all duration-300"
                         disabled={loading}
                       >
                         {loading ? 'SENDING...' : 'SEND MESSAGE'}

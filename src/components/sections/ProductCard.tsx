@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Product } from '@/types';
@@ -11,8 +12,17 @@ const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <Card className="group hover:shadow-lg transition-shadow duration-300">
       <CardHeader className="p-0">
-        <div className="relative h-48 w-full overflow-hidden rounded-t-lg bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
-          <span className="text-primary/60 text-sm font-medium">{product.name}</span>
+        <div className="relative h-48 w-full overflow-hidden rounded-t-lg bg-stone-100 flex items-center justify-center">
+          {product.images && product.images.length > 0 ? (
+            <Image
+              src={product.images[0]}
+              alt={product.name}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          ) : (
+            <span className="text-primary/60 text-sm font-medium">{product.name}</span>
+          )}
         </div>
       </CardHeader>
       <CardContent className="p-6">
@@ -35,7 +45,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </div>
         <Button asChild className="w-full">
           <Link href={`/products/${product.id}`}>
-            View Details
+            Get a Quote
           </Link>
         </Button>
       </CardContent>

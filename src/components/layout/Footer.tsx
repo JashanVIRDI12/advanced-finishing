@@ -16,7 +16,7 @@ const Footer = () => {
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-bold text-2xl tracking-tight text-white uppercase">
-                  Advanced Finishing
+                  Quince Canada
                 </span>
                 <span className="text-[10px] tracking-widest text-primary uppercase font-bold">
                   Insulation
@@ -24,19 +24,19 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              The expert in facade renovation and exterior thermal insulation in Canada.
+              Innovative insulation solutions for energy efficiency.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-8 h-8 bg-sky-900 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="#" className="w-8 h-8 bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Facebook className="h-4 w-4 text-white" />
               </a>
-              <a href="#" className="w-8 h-8 bg-sky-900 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="#" className="w-8 h-8 bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Twitter className="h-4 w-4 text-white" />
               </a>
-              <a href="#" className="w-8 h-8 bg-sky-900 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="#" className="w-8 h-8 bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Linkedin className="h-4 w-4 text-white" />
               </a>
-              <a href="#" className="w-8 h-8 bg-sky-900 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="#" className="w-8 h-8 bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Instagram className="h-4 w-4 text-white" />
               </a>
             </div>
@@ -69,7 +69,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Company */}
           <div>
             <h3 className="font-bold text-lg mb-6 uppercase tracking-wider text-white">Company</h3>
             <ul className="space-y-3 text-sm">
@@ -79,18 +79,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-primary transition-colors">
-                  News
-                </Link>
-              </li>
-              <li>
-                <Link href="/testimonials" className="text-gray-400 hover:text-primary transition-colors">
-                  Reviews
-                </Link>
-              </li>
-              <li>
-                <Link href="/faqs" className="text-gray-400 hover:text-primary transition-colors">
-                  FAQs
+                <Link href="/contact" className="text-gray-400 hover:text-primary transition-colors">
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -102,16 +92,16 @@ const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-gray-400 leading-snug">123 Maple Street<br />Toronto, ON M5V 2T6</span>
+                <span className="text-gray-400 leading-snug">12545 Coleraine Dr #9<br />Caledon, ON L7E 3B</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <a href="tel:18009737866" className="text-gray-400 hover:text-white transition-colors">1-800-Advanced Finishing-ON</a>
+                <a href="tel:2892065308" className="text-gray-400 hover:text-white transition-colors">(289) 206-5308</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a href="mailto:contact@advancedfinishing.ca" className="text-gray-400 hover:text-white transition-colors">
-                  contact@advancedfinishing.ca
+                <a href="mailto:info@quincecanada.com" className="text-gray-400 hover:text-white transition-colors">
+                  info@quincecanada.com
                 </a>
               </li>
             </ul>
@@ -119,10 +109,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-sky-800 mt-12 pt-8">
+        <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-500 text-sm">
-              © {currentYear} Advanced Finishing. All rights reserved.
+              © Copyright 2026 Network Solutions, LLC. All rights reserved.<br />
+              <span className="text-xs">All registered trademarks herein are the property of their respective owners.</span>
             </div>
             <div className="flex flex-wrap justify-center space-x-6 text-sm">
               <Link href="/privacy" className="text-gray-500 hover:text-white transition-colors">

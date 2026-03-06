@@ -13,8 +13,8 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://insulpro.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Advanced Finishing – Facades & Insulation",
-    template: "%s | Advanced Finishing",
+    default: "Quince Canada – Facades & Insulation",
+    template: "%s | Quince Canada",
   },
   description:
     "The expert in facade renovation and exterior thermal insulation in Canada.",
@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     "thermal insulation",
     "home renovation",
   ],
-  authors: [{ name: "Advanced Finishing" }],
-  creator: "Advanced Finishing",
+  authors: [{ name: "Quince Canada" }],
+  creator: "Quince Canada",
   openGraph: {
     type: "website",
     locale: "en_CA",
     url: siteUrl,
-    siteName: "Advanced Finishing",
-    title: "Advanced Finishing – Facades & Insulation",
+    siteName: "Quince Canada",
+    title: "Quince Canada – Facades & Insulation",
     description:
       "The expert in facade renovation and exterior thermal insulation in Canada.",
     images: [
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Advanced Finishing",
+        alt: "Quince Canada",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Advanced Finishing – Facades & Insulation",
+    title: "Quince Canada – Facades & Insulation",
     description:
       "The expert in facade renovation and exterior thermal insulation in Canada.",
     images: ["/images/og-image.jpg"],
