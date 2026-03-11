@@ -41,7 +41,7 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-gray-400 leading-relaxed mb-10 max-w-2xl border-l-2 border-primary pl-6">
-                Quince Canada specializes in advanced Low-E insulation foils. Our meticulously designed films and sheets dramatically reduce heat transfer, engineered for the highest tier of commercial and residential performance.
+                Quince Canada specializes in advanced engineered insulation materials. Our meticulously designed products help reduce heat loss and are engineered to deliver top-tier performance for both commercial and residential applications.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-5">

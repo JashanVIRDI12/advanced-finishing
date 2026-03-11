@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Phone, Mail, MapPin, Clock, CheckCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 interface FormData {
   firstName: string;
@@ -68,10 +69,28 @@ export default function ContactPage() {
     if (formData.honeypot) return;
     if (!validate()) return;
     setLoading(true);
-    // Simulate API call
-    await new Promise((r) => setTimeout(r, 1200));
-    setLoading(false);
-    setSubmitted(true);
+
+    try {
+      await emailjs.send(
+        'service_yfcj0ij',
+        'template_fnpq7qc',
+        {
+          from_name: `${formData.firstName} ${formData.lastName}`,
+          from_email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          project_type: formData.projectType,
+          message: formData.message,
+        },
+        'TjqiXbxf6gOXDaq0X'
+      );
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      alert('Failed to send message. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (field: keyof FormData, value: string) => {
@@ -126,11 +145,18 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
+              {/* Interactive Map */}
               <div className="w-full h-64 bg-gray-200 rounded-none flex flex-col items-center justify-center border border-gray-300 relative overflow-hidden group">
-                <MapPin className="h-10 w-10 text-gray-400 mb-3 group-hover:scale-110 transition-transform duration-300" />
-                <p className="text-sm font-semibold text-gray-600 uppercase tracking-widest">Interactive Map</p>
-                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <iframe
+                  src="https://maps.google.com/maps?q=12545%20Coleraine%20Dr%20%239,%20Caledon,%20ON%20L7E%203B&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute inset-0 z-10"
+                />
               </div>
             </div>
 

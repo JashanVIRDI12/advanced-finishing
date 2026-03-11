@@ -3,16 +3,16 @@ import { Product } from '@/types';
 export const products: Product[] = [
   {
     id: 'reflective-shield-elite',
-    name: 'Reflective Shield Elite',
-    category: 'reflective-insulation',
+    name: 'Reflective insulating foil',
+    category: 'thermal-barrier',
     description: 'Premium multi-layer reflective insulation system designed for maximum thermal performance in residential and commercial applications.',
-    shortDescription: 'Advanced reflective insulation with 99% radiant barrier efficiency.',
+    shortDescription: 'Advanced reflective insulation with up to 97% radiant barrier efficiency.',
     images: [
       '/images/twosidewrap.png'
     ],
     features: [
-      '99% radiant barrier efficiency',
-      'Multi-layer construction',
+      'Up to 97% heat barrier efficiency',
+      'Customizable',
       'Class 1 fire rated',
       'Moisture resistant',
       'Easy installation',
@@ -127,17 +127,17 @@ export const products: Product[] = [
   },
   {
     id: 'eco-shield-basics',
-    name: 'Eco Shield Basics',
+    name: 'High reflective woven sheets',
     category: 'reflective-insulation',
-    description: 'Affordable single-sided reflective insulation for budget-conscious projects without compromising quality.',
-    shortDescription: 'Budget-friendly reflective insulation with reliable performance.',
+    description: 'Affordable reflective insulation providing super durable strength and up to 97% thermal reflectivity.',
+    shortDescription: 'High reflective woven sheets with 97% thermal reflectivity.',
     images: [
       '/images/onesidewrap.png'
     ],
     features: [
-      'Single-sided foil',
-      'Economical solution',
-      'Easy to handle',
+      '97% thermal reflectivity',
+      'Super durable',
+      'High mechanical strength',
       'Lightweight design',
       'Basic protection',
       '10-year warranty'
@@ -187,6 +187,11 @@ export const productCategories = [
     id: 'reflective-insulation',
     name: 'Reflective Insulation',
     description: 'Multi-layer reflective barriers for maximum thermal performance'
+  },
+  {
+    id: 'thermal-barrier',
+    name: 'Thermal Barrier',
+    description: 'Advanced thermal barrier solutions'
   },
   {
     id: 'bubble-insulation',
